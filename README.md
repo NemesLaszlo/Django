@@ -100,3 +100,13 @@ list1.save()  # save changes
 
 list1.delete()  # delete the list
 ```
+
+### Creating an Admin Login
+
+f you navigate to the django admin page you will notice that it asks you for some login information. However, right now we have no login. To create a login we need to navigate to the directory containing migrate.py and run the following command: python manage.py createsuperuser
+
+Once you have created a user run the server by running python manage.py runserver and navigate to the "admin/" address. Here you can use your login information to login.
+
+### Adding Our Database
+
+This page is meant to show us (the admin) information about our site and database. To add our database to this dashboard we need to modify the admin.py file from within our app directory.
